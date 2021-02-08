@@ -1,0 +1,16 @@
+import unittest
+
+class TestClass01(unittest.TestCase):
+
+    def test_case01(self):
+        my_str = "NICOLA"
+        my_int = 000
+        self.assertTrue(isinstance(my_str, str))
+        self.assertTrue(isinstance(my_int, int))
+
+    def test_case02(self):
+        my_pi = 3.14
+        self.assertTrue(isinstance(my_pi, int))
+
+if __name__ == '__main__':
+    unittest.main()
