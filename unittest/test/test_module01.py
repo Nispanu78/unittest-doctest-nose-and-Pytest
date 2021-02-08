@@ -10,7 +10,7 @@ class TestClass01(unittest.TestCase):
 
     def test_case02(self):
         my_pi = 3.14
-        self.assertTrue(isinstance(my_pi, int))
+        self.assertFalse(isinstance(my_pi, int))
 
 if __name__ == '__main__':
     unittest.main()
