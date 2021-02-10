@@ -1,1 +1,1 @@
-all = ["mymathlib", "mymathsimple"]
+all = ["mymathlib", "mymathsimple", "test_module09"]
