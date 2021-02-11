@@ -16,4 +16,4 @@ class mymathsimple():
 
     def __del__(self):
         """Destructor for this class..."""
-        print("Destroying object : " + self.__class__.__name__)
+        print("Destroying object : " + self.__class__.__name__ )

@@ -1,30 +1,36 @@
 import unittest
 from mypackage.mymathsimple import *
 
-simple_math = 0
+my_obj = 0
 
 def setUpModule():
-    global simple_math
-    simple_math = mymathsimple()
+    print("In setUpModule()...")
+    global my_obj
+    my_obj = mymathsimple
+
 
 def tearDownModule():
-    global simple_math
-    simple_math = mymathsimple()
+    print("In tearDownModule()...")
+    global my_obj
+    del my_obj
 
 class TestClass11(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        print("In setUp class ...")
+        print("In setUpClass ...")
 
     def setUp(self):
         print("In setUp ...")
 
-    def test_case01(self):
-        self.assertEqual(mymathsimple.add(5, 4), 10)
+    def test_module01(self):
+        self.assertEqual(mymathsimple.add(2, 3), 5)
+
+    def test_module02(self):
+        self.assertEqual(mymathsimple.mul(2,3), 7)
 
     def tearDown(self):
         print("In tearDown")
 
     @classmethod
     def tearDownClass(cls):
-        print("In setUp class ...")
+        print("In tearDownClass ...")
