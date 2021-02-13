@@ -34,4 +34,4 @@ class TestClass11():
 
     @classmethod
     def tearDownClass(cls):
-        print("\nIn tear down ...")
+        print("\nIn tearDownClass ...")
