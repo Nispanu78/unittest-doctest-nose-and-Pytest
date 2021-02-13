@@ -43,4 +43,4 @@ class TestClass15(unittest.TestCase):
     @classmethod
     def tearDownClass(cls):
         global calc
-        calc = Calculator()
+        del calc
