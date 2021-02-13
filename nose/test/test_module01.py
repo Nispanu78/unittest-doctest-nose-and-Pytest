@@ -1,3 +1,2 @@
-def test_case01(self):
-    upper = "aaa"
-    upper.Upper() = "AAA"
+def test_case01():
+    assert 'aaa'.upper() == 'AAA'
