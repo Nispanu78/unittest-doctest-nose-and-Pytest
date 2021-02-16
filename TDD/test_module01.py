@@ -10,3 +10,11 @@ class TestClass01:
     def test_case02(self):
         with pytest.raises(ValueError):
             result = Calculator().add(2, 'two')
+
+    def test_case03(self):
+        with pytest.raises(ValueError):
+            result = Calculator().add('two', 2)
+
+    def test_case04(self):
+        with pytest.raises(ValueError):
+            result = Calculator().add('two', 'two')
